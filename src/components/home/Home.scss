@@ -1,0 +1,8 @@
+.door-image{
+    z-index: 2;
+}
+
+.door :hover{
+background: opacify($color: #000000, $amount: 1);
+z-index:1 ;
+}
