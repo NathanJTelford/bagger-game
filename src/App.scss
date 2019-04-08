@@ -1,5 +1,21 @@
+
 .App {
   text-align: center;
   display:flex;
+  height: 100vh;
+  background-image: url('../src//images//OCCNAP0.jpg');
+
+  .footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    height: 6vh;
+    background: slategray;
+
+    .copyrights  {
+      align-items: center;
+    }
+
+  }
 }
 

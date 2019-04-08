@@ -1,0 +1,17 @@
+.stockroom{
+display:flex;
+
+
+.overflow-div{
+position: relative;
+overflow: hidden;
+
+    .truck{
+        position: absolute;
+        right: -8rem;
+        bottom: -7vh;
+    }
+}
+
+
+}

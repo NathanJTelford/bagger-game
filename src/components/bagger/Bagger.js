@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Icons from '../../icons/icons';
+import '../bagger/Bagger.scss';
 
 export default class Bagger extends Component {
   render() {
@@ -11,8 +12,11 @@ export default class Bagger extends Component {
          <div className='machine' >
          <img src={Icons.machine} style={{height:'50vh'}} alt='' />
          </div>
+         <div className='overflow-div'>
+
          <div className='truck' >
-         <img src={Icons.truck} style={{height:'50vh'}} alt='' />
+         <img src={Icons.truck} style={{height:'77vh'}} alt='' />
+         </div>
          </div>
         
       </div>
