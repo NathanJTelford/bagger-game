@@ -15,6 +15,13 @@ export default function dialog(str){
                 timer: 1500
             })
             break;
+            case 'start':
+                Swal.fire({
+                    position:'top',
+                    title:'Here we go, off to our interview!',
+                    showConfirmButton: false,
+                    timer:1500
+                })
 
         default: Swal.fire(` what happened?`)
     }
