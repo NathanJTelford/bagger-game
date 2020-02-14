@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Icons from '../../icons/icons';
-import Swal from 'sweetalert2';
 import Footer from '../footer'
 import '../home/Home.scss';
+import dialog from '../../lib/dialog'
 
 export default class Home extends Component {
 
@@ -28,24 +28,8 @@ export default class Home extends Component {
 
     toTheMachine = () => {
         const str = this.state.managerDialog
-        switch (str) {
-            case 'yes':
-                Swal.fire(`great! let's get started. just open the door over there and E5000 will let you know what to do`)
-                break;
-            case 'no':
-                Swal.fire(`Oh, that's too bad`)
-                break;
-            case 'on load':
-                Swal.fire({
-                    position: 'top',
-                    title: 'I have a job for you, are you interested?',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
-                break;
+        dialog(str)
 
-            default: Swal.fire(` what happened?`)
-        }
     }
 
     render() {

@@ -7,6 +7,11 @@
     .enter{
         font-size: 2rem;
         z-index: 6;
+        background-color: transparent;
+        border-color: transparent;
+        position: absolute;
+        margin-top: 14em;
+        margin-left: 4em;
     }
 
     .factory-front{

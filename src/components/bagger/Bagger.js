@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Icons from '../../icons/icons';
+import dialog from '../../lib/dialog';
 import '../bagger/Bagger.scss';
 
 export default class Bagger extends Component {
