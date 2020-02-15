@@ -19,4 +19,17 @@
         top: 1.2rem;
     }
     
+    .opening-modal{
+        position: fixed;
+        top: 50%;
+        right:50%;
+        z-index: 10;
+        .opening-modal-button{
+            border-radius: 40%;
+            width:5rem;
+            height: 3rem;
+            background: grey;
+        }
+    }
+
   }
