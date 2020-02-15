@@ -15,10 +15,14 @@ export default class Landing extends Component {
 componentDidMount(){
   
 }
+hideModal=()=>(this.setState({showModal:false}))
 
-firstDialog(){
-  dialog('start')
+firstDialog = async ()=>{
+  await dialog('start');
+  this.hideModal()
 }
+
+
 
 
 
@@ -26,7 +30,11 @@ firstDialog(){
     console.log(this.info)
   return (
     <div id='landing-main' >
-      <Modal firstDialog={this.firstDialog}/>
+      {
+        this.state.showModal ?
+        <Modal firstDialog={this.firstDialog}  hideModal={this.hideModal}/>
+        :null
+      }
     <Link to='/home'>
     <button className='enter'>Enter Factory</button>
     </Link>
