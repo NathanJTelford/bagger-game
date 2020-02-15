@@ -22,6 +22,7 @@ export default function dialog(str){
                     showConfirmButton: false,
                     timer:1500
                 })
+                break;
 
         default: Swal.fire(` what happened?`)
     }

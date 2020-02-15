@@ -1,8 +1,10 @@
 import React from 'react';
+import './Landing.scss';
 
 
-const modal = ()=>{
+const modal = (props)=>{
     return(
-        <div></div>
+        <div className='opening-modal'><button onClick={()=>props.firstDialog('start')}>Begin</button></div>
     )
 }
+export default modal

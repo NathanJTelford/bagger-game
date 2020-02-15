@@ -3,6 +3,7 @@ import Icons from '../../icons/icons';
 import { Link } from 'react-router-dom';
 import '../landing/Landing.scss';
 import dialog from '../../lib/dialog';
+import Modal from './Modal'
 
 export default class Landing extends Component {
   state={
@@ -15,12 +16,17 @@ componentDidMount(){
   
 }
 
+firstDialog(){
+  dialog('start')
+}
+
 
 
   render(){
     console.log(this.info)
   return (
     <div id='landing-main' >
+      <Modal firstDialog={this.firstDialog}/>
     <Link to='/home'>
     <button className='enter'>Enter Factory</button>
     </Link>
